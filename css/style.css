@@ -1,0 +1,191 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /* Fonte Roboto */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* Fonte Rubik */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); /* Fonte Ubuntu */
+
+:root {
+    --cor01: rgb(43,99,210);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+} 
+
+body {
+    background: var(--cor01);
+    background: -webkit-gradient(linear, left top, right top, color-stop(26%, rgba(43,99,210,1)), color-stop(33%, rgba(47,97,195,1)), color-stop(35%, rgba(47,97,195,1)));
+    background: -o-linear-gradient(left, rgba(43,99,210,1) 26%, rgba(47,97,195,1) 33%, rgba(47,97,195,1) 35%);
+    background: linear-gradient(90deg, rgba(43,99,210,1) 26%, rgba(47,97,195,1) 33%, rgba(47,97,195,1) 35%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b63d2",endColorstr="#2f61c3",GradientType=1);
+}
+
+.destaque {
+    color: var(--cor01);
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    background-color: white;
+    width: 70%;
+    padding: 3%;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.384);
+            box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.384);
+}
+
+#container img {
+    width: 50%;
+}
+
+#formulario > h4 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: 100;
+    font-family: 'Rubik', sans-serif;
+}
+
+#formulario > h4::after {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--cor01);
+}
+
+#formulario input {
+    display: block;
+    border: none;
+    border-bottom: 0.9px solid rgba(0, 0, 0, 0.274);
+}
+
+#formulario input[type="email"],
+#formulario input[type="password"] {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#formulario input:focus {
+    outline-color: var(--cor01);
+}
+
+#formulario input.icone {
+    padding-left: 35px;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: center;
+}
+
+#formulario input#icone1 {
+    background-image: url(../img/e-mail.png);
+}
+
+#formulario input#icone2 {
+    background-image: url(../img/cadeado.png);
+}
+
+.inputCampo {
+    width: 100%;
+    height: 39px;
+}
+
+.margin-bottom {
+    margin-bottom: 15px;
+}
+
+.margin-top {
+    margin-top: 15px;
+}
+
+#formulario input#btnInviar {
+    background-color: var(--cor01);
+    border: none;
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#formulario input#btnInviar:hover {
+    background-color: rgb(99, 136, 211);
+}
+
+#formulario span {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+#container div#container-redes {
+    text-align: center;
+}
+
+#container div#container-redes > a {
+    text-decoration: none;
+}
+
+#container-redes > a > i {
+    color: black;
+    margin-left: 16px;
+    font-size: 29px;
+}
+
+.transicao,
+.transicao i {
+    -webkit-transition: all 3;
+    -o-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    transition: all 3s;
+}
+
+#container-redes > a > i:hover {
+    color: var(--cor01);
+}
+
+#formulario a {
+    text-decoration: none;
+}
+
+#formulario a:hover {
+    text-decoration: underline;
+    color: rgb(99, 136, 211)
+}
